@@ -18,9 +18,11 @@ export default function TextForm(props) {
 
     const handleUpCallback = () => {
       setCustomText(text.toLocaleUpperCase()) 
+      props.showAlert("success","Converted to upparcase!")
     }
     const handleLoCallback = () => {
       setCustomText(text.toLocaleLowerCase()) 
+      props.showAlert("success","Converted to upparcase!")
     }
 
   return (
